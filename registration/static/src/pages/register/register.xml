@@ -11,7 +11,7 @@
                     <img t-att-src="'/registration/static/img/Logo.svg'" alt="Logo" class=""/>
                     <div >
                         <h1 style="font-family: Inter; font-size: 20px; font-weight: 600; line-height: 24.2px; text-align: left; padding-top: 24px; padding-bottom: 32px;">Create an account</h1>
-                        <form t-on-submit.prevent="return validateForm()">
+                        <form t-on-submit.prevent="handleSubmit">
                             <div class="row">
                                 <div class="col-6">
                                     <label for="first_name" class="form-label">First Name</label>
