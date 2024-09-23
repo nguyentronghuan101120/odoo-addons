@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template xml:space="preserve">
+    <t t-name="registration.Register">
+        <div class="container-fluid row p-0">
+
+            <div class="col p-0" style="">
+                <img t-att-src="'/registration/static/img/Register.png'" alt="Register" class="img-fluid" style="height: 100vh; width: 100%;"/>
+            </div>
+            <div class="col p-0" style="overflow-y: auto; max-height: 100vh;">
+                <div class="container-fluid p-5">
+                    <img t-att-src="'/registration/static/img/Logo.svg'" alt="Logo" class=""/>
+                    <div >
+                        <h1 style="font-family: Inter; font-size: 20px; font-weight: 600; line-height: 24.2px; text-align: left; padding-top: 24px; padding-bottom: 32px;">Create an account</h1>
+                        <form t-on-submit.prevent="return validateForm()">
+                            <div class="row">
+                                <div class="col-6">
+                                    <label for="first_name" class="form-label">First Name</label>
+                                    <input type="text" class="form-control rounded-1" id="first_name" name="first_name" style="padding: 8px;" required="required"/>
+                                </div>
+                                <div class="col-6">
+                                    <label for="last_name" class="form-label">Last Name</label>
+                                    <input type="text" class="form-control rounded-1" id="last_name" name="last_name" style="padding: 8px;" required="required"/>
+                                </div>
+                            </div>
+                            <div style="padding-top: 16px;">
+                                <label for="whatsapp" class="form-label">Whatsapp Number</label>
+                                <input type="tel" class="form-control rounded-1" id="whatsapp" name="whatsapp" style="padding: 8px;" required="required" pattern="[0-9]{10,15}"/>
+                            </div>
+                            <div style="padding-top: 16px;">
+                                <label for="password" class="form-label">Password</label>
+                                <input type="password" class="form-control rounded-1" id="password" name="password" style="padding: 8px;" required="required" minlength="6"/>
+                            </div>
+                            <div style="padding-top: 16px;">
+                                <label for="domain" class="form-label">Select Domain</label>
+                                <input type="text" class="form-control rounded-1" id="domain" name="domain" style="padding: 8px;" placeholder=".asia" required="required"/>
+                            </div>
+
+                            <div style="padding-top: 16px;">
+                                <label for="company_name" class="form-label">Company Name</label>
+                                <input type="text" class="form-control rounded-1" id="company_name" name="company_name" style="padding: 8px;" required="required"/>
+                            </div>
+
+                            <div style="padding-top: 16px;">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control rounded-1" id="email" name="email" style="padding: 8px;" required="required"/>
+                            </div>
+
+                            <div class="row" style="padding-top: 16px;">
+                                <div class="col-6">
+                                    <label for="company_registration_number" class="form-label">Company Registration Number</label>
+                                    <input type="text" class="form-control rounded-1" id="company_registration_number" name="company_registration_number" style="padding: 8px;" required="required"/>
+                                </div>
+                                <div class="col-6">
+                                    <label for="tax_identification_number" class="form-label">Tax Identification Number</label>
+                                    <input type="text" class="form-control rounded-1" id="tax_identification_number" name="tax_identification_number" style="padding: 8px;" required="required"/>
+                                </div>
+                            </div>
+
+                            <div style="padding-top: 16px;">
+                                <div class="g-recaptcha" data-sitekey="__data_sitekey__"></div>
+                            </div>
+                            <div style="padding-top: 16px;">
+                                <input type="checkbox" id="terms" name="terms" style="margin-right: 8px;" required="required"/>
+                                <label for="terms">I agree with Terms and Conditions</label>
+                            </div>
+                            <div style="padding-top: 32px;">
+                                <button type="submit" class="btn btn-warning" style="width: 100%; height: 42px; background: rgba(255, 197, 51, 1); font-family: Inter; font-size: 16px; font-weight: 600; line-height: 16px; text-align: center;">Register</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </t>
+</template>
