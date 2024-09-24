@@ -13,6 +13,7 @@
             ('include', 'web._assets_bootstrap'),
             ('include', 'web._assets_core'),
             'registration/static/src/**/*',
+            'registration/static/src/scss/styles.scss',
         ],
     },
 }
