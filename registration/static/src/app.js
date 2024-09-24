@@ -4,6 +4,7 @@ import { Component, whenReady } from "@odoo/owl";
 import { mountComponent } from "@web/env";
 import { App } from "./main";
 
+
 export async function startWebClient() {
   await whenReady();
 
