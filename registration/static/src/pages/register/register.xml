@@ -2,60 +2,63 @@
 <template xml:space="preserve">
     <t t-name="registration.Register">
 
+        <!-- Link to the CSS file -->
+        <link rel="stylesheet" type="text/css" href="/registration/static/src/css/register.css"/>
+
         <div class="container-fluid row p-0">
 
             <!-- Register background image section -->
-            <div class="col p-0 register-background" style="">
-                <img t-att-src="'/registration/static/img/Register.png'" alt="Register" class="img-fluid" style="height: 100vh; width: 100%;"/>
+            <div class="col p-0 register-background">
+                <img t-att-src="'/registration/static/img/Register.png'" alt="Register" class="img-fluid"/>
             </div>
 
             <!-- Form section -->
             <div class="col p-0" style="overflow-y: auto; max-height: 100vh;">
                 <div class="container-fluid p-5">
-                    <img t-att-src="'/registration/static/img/Logo.svg'" alt="Logo" class=""/>
+                    <img t-att-src="'/registration/static/img/Logo.svg'" alt="Logo"/>
                     <div>
-                        <h1 style="font-family: Inter; font-size: 20px; font-weight: 600; line-height: 24.2px; text-align: left; padding-top: 24px; padding-bottom: 32px;">Create an account</h1>
+                        <h1>Create an account</h1>
                         <form t-on-submit.prevent="onSubmit">
                             <div class="row">
                                 <div class="col-6">
                                     <label for="first_name" class="form-label">First Name</label>
-                                    <input type="text" class="form-control rounded-1" id="first_name" name="first_name" style="padding: 8px;" required="required" t-model="state.firstName"/>
+                                    <input type="text" class="form-control rounded-1" id="first_name" name="first_name" required="required" t-model="state.firstName"/>
                                 </div>
                                 <div class="col-6">
                                     <label for="last_name" class="form-label">Last Name</label>
-                                    <input type="text" class="form-control rounded-1" id="last_name" name="last_name" style="padding: 8px;" required="required" t-model="state.lastName"/>
+                                    <input type="text" class="form-control rounded-1" id="last_name" name="last_name" required="required" t-model="state.lastName"/>
                                 </div>
                             </div>
                             <div style="padding-top: 16px;">
                                 <label for="whatsapp" class="form-label">Whatsapp Number</label>
-                                <input type="tel" class="form-control rounded-1" id="whatsapp" name="whatsapp" style="padding: 8px;" required="required" pattern="[0-9]{10,15}" t-model="state.whatsapp"/>
+                                <input type="tel" class="form-control rounded-1" id="whatsapp" name="whatsapp" required="required" pattern="[0-9]{10,15}" t-model="state.whatsapp"/>
                             </div>
                             <div style="padding-top: 16px;">
                                 <label for="password" class="form-label">Password</label>
-                                <input type="password" class="form-control rounded-1" id="password" name="password" style="padding: 8px;" required="required" minlength="6" t-model="state.password"/>
+                                <input type="password" class="form-control rounded-1" id="password" name="password" required="required" minlength="6" t-model="state.password"/>
                             </div>
                     
                             <div style="padding-top: 16px;">
                                 <label for="domain" class="form-label">Select Domain</label>
-                                <div style="display: flex; align-items: center; width: 100%; height: 42px; cursor: text; border: 1px solid #D0D5DD; border-radius: 4px; padding: 10px 0 10px 14px;" t-on-click="focusDomain">
-                                    <div id="domain" t-att-contenteditable="true" style="border: none; outline: none;" t-ref="domain" t-on-blur="onBlurDomain"></div>
-                                    <span style="font-family: Inter; font-size: 16px; font-weight: 400; line-height: 22px; text-align: left; color: #6B6A65;">.asia</span>
+                                <div id="domain-container" t-on-click="focusDomain">
+                                    <div id="domain" t-att-contenteditable="true" t-ref="domain" t-on-blur="onBlurDomain"></div>
+                                    <span>.asia</span>
                                 </div>
                             </div>
 
                             <div style="padding-top: 16px;">
                                 <label for="email" class="form-label">Email</label>
-                                <input type="email" class="form-control rounded-1" id="email" name="email" style="padding: 8px;" required="required" t-model="state.email"/>
+                                <input type="email" class="form-control rounded-1" id="email" name="email" required="required" t-model="state.email"/>
                             </div>
 
                             <div class="row" style="padding-top: 16px;">
                                 <div class="col-6">
                                     <label for="company_registration_number" class="form-label">Company Registration Number</label>
-                                    <input type="text" class="form-control rounded-1" id="company_registration_number" name="company_registration_number" style="padding: 8px;" required="required" t-model="state.companyRegistrationNumber"/>
+                                    <input type="text" class="form-control rounded-1" id="company_registration_number" name="company_registration_number" required="required" t-model="state.companyRegistrationNumber"/>
                                 </div>
                                 <div class="col-6">
                                     <label for="tax_identification_number" class="form-label">Tax Identification Number</label>
-                                    <input type="text" class="form-control rounded-1" id="tax_identification_number" name="tax_identification_number" style="padding: 8px;" required="required" t-model="state.taxIdentificationNumber"/>
+                                    <input type="text" class="form-control rounded-1" id="tax_identification_number" name="tax_identification_number" required="required" t-model="state.taxIdentificationNumber"/>
                                 </div>
                             </div>
 
@@ -67,7 +70,7 @@
                                 <label for="terms">I agree with Terms and Conditions</label>
                             </div>
                             <div style="padding-top: 32px;">
-                                <button type="submit" class="btn btn-warning" style="width: 100%; height: 42px; background: rgba(255, 197, 51, 1); font-family: Inter; font-size: 16px; font-weight: 600; line-height: 16px; text-align: center;">Register</button>
+                                <button type="submit" class="btn btn-warning">Register</button>
                             </div>
                         </form>
                     </div>

@@ -1,31 +1,167 @@
 .otp-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+  display: flex;
+  justify-content: space-between; /* Distribute space between items */
+  align-items: center; /* Center vertically */
+  width: 100%; /* Full width of the container */
+}
+
+.otp-form {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh;
+  width: 100%;
+  flex-direction: column; /* Stack elements vertically */
+}
+
+.register-background img {
+  height: 100vh;
+  width: 100%;
 }
 
 .otp-container img {
-    height: 24px;
+  height: 24px;
+  width: 100%;
 }
 
 .otp-container p {
-    font-size: 16px;
-    font-weight: 400;
-    color: #666666;
+  font-size: 14px;
+  font-weight: 400;
+  color: #6b6a65;
 }
 
-/* .otp-container div.row input:not(:first-child) {
-    margin-left: 10.8px;
-} */
-
-.otp-container input {
-    background-color: #DCDCDC;
-    border: none;
-    border-radius: 10.8px;
-    height: 66.57px;
-    width: 50.38px;
-    text-decoration: none;
+.otp-container .title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #242322;
+  padding-top: 24px;
+  padding-bottom: 10px;
 }
 
+.otp-container .row {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically if needed */
+}
+
+.otp-container .otp-input {
+  margin-right: 14px;
+}
+
+.otp-container .otp-input:last-child {
+  margin-left: 0;
+}
+
+.otp-container .dash {
+  text-align: right;
+  width: 0px;
+  padding: 0 4px 0 10px;
+}
+
+.otp-container .otp-input input {
+  background-color: #dcdcdc;
+  border: none;
+  border-radius: 10.8px;
+  height: 66.57px;
+  width: 50.38px;
+  text-decoration: none;
+}
+
+.otp-container a {
+  color: #996e00;
+  text-decoration: none;
+}
+
+.otp-container button {
+  width: 103px;
+  height: 42px;
+  background: rgba(255, 197, 51, 1);
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 16px;
+  text-align: center;
+  margin-top: 24px;
+}
+.otp-form {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh;
+  width: 100%;
+  flex-direction: column; /* Stack elements vertically */
+}
+
+.otp-container {
+  display: flex;
+  align-items: center;
+}
+
+.register-background img {
+  height: 100vh;
+  width: 100%;
+}
+
+.otp-container img {
+  height: 24px;
+}
+
+.otp-container p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #6b6a65;
+}
+
+.otp-container .title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #242322;
+  padding-top: 24px;
+  padding-bottom: 10px;
+}
+
+.otp-container .row {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically if needed */
+}
+
+.otp-container .otp-input {
+  margin-right: 14px;
+}
+
+.otp-container .otp-input:last-child {
+  margin-left: 0;
+}
+
+.otp-container .dash {
+  text-align: right;
+  width: 0px;
+  padding: 0 4px 0 10px;
+}
+
+.otp-container .otp-input input {
+  background-color: #dcdcdc;
+  border: none;
+  border-radius: 10.8px;
+  height: 66.57px;
+  width: 50.38px;
+  text-decoration: none;
+}
+
+.otp-container a {
+  color: #996e00;
+  text-decoration: none;
+}
+
+.otp-container button {
+  width: 103px;
+  height: 42px;
+  background: rgba(255, 197, 51, 1);
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 16px;
+  text-align: center;
+  margin-top: 24px;
+}
