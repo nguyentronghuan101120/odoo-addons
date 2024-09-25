@@ -1,0 +1,31 @@
+.otp-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.otp-container img {
+    height: 24px;
+}
+
+.otp-container p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #666666;
+}
+
+/* .otp-container div.row input:not(:first-child) {
+    margin-left: 10.8px;
+} */
+
+.otp-container input {
+    background-color: #DCDCDC;
+    border: none;
+    border-radius: 10.8px;
+    height: 66.57px;
+    width: 50.38px;
+    text-decoration: none;
+}
+

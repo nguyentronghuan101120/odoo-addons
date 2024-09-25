@@ -3,7 +3,7 @@
     'version': '1.0',
     'depends': ['base','web'],
     'data': [
-        'views/registration_view.xml',
+        'views/registration_templates.xml',
     ],
     'assets': {
         'registration.assets_standalone_app': [

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template xml:space="preserve">
+    <t t-name="registration.Otp">
+
+        <div class="container-fluid p-0 otp-container">
+
+            <img t-att-src="'/registration/static/img/Logo.svg'" alt="Logo" class=""/>
+
+            <h2>OTP Verification Code</h2>
+
+            <p>We have sent the code to <t t-esc="whatsappNumber"/> via Whatsapp</p>
+
+            <div class="row" t-ref="otpInput">
+                <div class="col-1">
+                    <input type="text" t-att-inputmode="numeric" t-att-maxlength="1" class="form-control"/>
+                </div>
+                <div class="col-1">
+                    <input type="text" t-att-inputmode="numeric" t-att-maxlength="1" class="form-control"/>
+                </div>
+                <div class="col-1">
+                    <input type="text" t-att-inputmode="numeric" t-att-maxlength="1" class="form-control"/>
+                </div>
+                <div class="col-1">
+                    <span>-</span>
+                </div>
+                <div class="col-1">
+                    <input type="text" t-att-inputmode="numeric" t-att-maxlength="1" class="form-control"/>
+                </div>
+                <div class="col-1">
+                    <input type="text" t-att-inputmode="numeric" t-att-maxlength="1" class="form-control"/>
+                </div>
+                <div class="col-1">
+                    <input type="text" t-att-inputmode="numeric" t-att-maxlength="1" class="form-control"/>
+                </div>
+            </div>
+
+            <p>Didn't receive the code? <a href="#">Resend code</a></p>
+            <button>Submit</button>
+
+
+        </div>
+    </t>
+</template>
